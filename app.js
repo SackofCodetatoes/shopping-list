@@ -20,12 +20,15 @@ $('ul').on('click', '.shopping-item-toggle', function(event){
 $('ul').on('click', '.shopping-item-delete', function(event){
   console.log('uhoh');
   //renderList(state, $('.shopping-list'));
+  removeItem(state, $(this));
 });
 
 
 
-function removeItem(){
-  
+function removeItem(state, element){
+  console.log(element);
+  var itemIndex = parseInt(element.closest('li').attr('granola'));
+  console.log(itemIndex);
   
 }
 
